@@ -164,14 +164,22 @@ function SettingsPage() {
                 </Grid>
               </Grid>
             )}
-            <Box textAlign="right">
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                marginTop: 4,
+              }}
+            >
+              <AppLink
+                to="/run-computation/$id/data-inputs"
+                params={{ id: 'new' }}
+              >
+                <Button variant="outlined">Back to Data Inputs</Button>
+              </AppLink>
               <AppLink to="/run-computation/$id/running" params={{ id: 'new' }}>
                 {/* CUSTOMIZE: run button */}
-                <Button
-                  variant="contained"
-                  data-testid="rnc-run-button"
-                  sx={{ marginTop: 4 }}
-                >
+                <Button variant="contained" data-testid="rnc-run-button">
                   Run Scenario
                 </Button>
               </AppLink>

@@ -154,7 +154,7 @@ function ResultsPage() {
               marginRight: '-2rem !important',
             }}
           >
-            Summary
+            Summary Statistics
           </Typography>
           <Typography
             component="li"
@@ -164,7 +164,7 @@ function ResultsPage() {
               marginRight: '-2rem !important',
             }}
           >
-            System Costing
+            Data Quality Metrics
           </Typography>
           <Typography
             component="li"
@@ -174,7 +174,7 @@ function ResultsPage() {
               marginRight: '-2rem !important',
             }}
           >
-            System Metrics
+            Export Options
           </Typography>
         </Stack>
         <Box flex={1}>
@@ -223,7 +223,7 @@ function ResultsPage() {
       >
         <AppLink to="/run-computation/$id/settings" params={{ id: 'new' }}>
           {/* CUSTOMIZE: back to settings button */}
-          <Button variant="contained">Back to Optimization Settings</Button>
+          <Button variant="outlined">Back to Extraction Settings</Button>
         </AppLink>
       </Box>
     </Stack>
